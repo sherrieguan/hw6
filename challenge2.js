@@ -1,3 +1,5 @@
+// hw 4 octave challenge
+
 var freqA = 261;
 var freqS = 440;
 var freqD = 392;
