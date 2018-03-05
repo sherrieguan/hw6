@@ -6,7 +6,7 @@
 
 // I created an array for var freq, and the slider allows you to change the octave.
 // The x and y position of your mouse changes the volume of the notes.
-// There is more visual feedback added.
+// There is more visual feedback added, and the triangles' opacity depends on the x position of the mouse.
 
 // How to play the melody from Shelter using your keyboard:
 // Play: A S D A
@@ -116,13 +116,13 @@ function draw() {
   background(0);
   fill(120);
   if (playingA) {
-    fill(170, 207, 255, random(350, 450));
+    fill(170, 207, 255, mouseX*2);
     drawTriangle();
     
-    fill(247, 212, 227, random(350, 450));
+    fill(247, 212, 227, mouseX*2);
     drawTriangle();
     
-    fill(156, 97, 170, random(350, 450));
+    fill(156, 97, 170, mouseX*2);
     drawTriangle();
     
     fill(0, 153, 115);
@@ -131,13 +131,13 @@ function draw() {
     
   }
   if (playingS) {
-    fill(170, 207, 255, random(300, 400));
+    fill(170, 207, 255, mouseX*2);
     drawTriangle();
     
-    fill(247, 212, 227, random(300, 400));
+    fill(247, 212, 227, mouseX*2);
     drawTriangle();
     
-    fill(156, 97, 170, random(300, 400));
+    fill(156, 97, 170, mouseX*2);
     drawTriangle();
     
     fill(0);
@@ -153,13 +153,13 @@ function draw() {
     triangle(250, 370, 325, 295, 175, 295);
   }
   if (playingD) {
-    fill(170, 207, 255, random(250, 350));
+    fill(170, 207, 255, mouseX);
     drawTriangle();
     
-    fill(247, 212, 227, random(250, 350));
+    fill(247, 212, 227, mouseX);
     drawTriangle();
     
-    fill(156, 97, 170, random(250, 350));
+    fill(156, 97, 170, mouseX);
     drawTriangle();
     
     fill(0, 153, 115);
@@ -171,13 +171,13 @@ function draw() {
     quad(250, 225, 225, 250, 250, 275, 275, 250);
   }
   if (playingF) {
-    fill(170, 207, 255, random(200, 300));
+    fill(170, 207, 255, mouseX);
     drawTriangle();
     
-    fill(247, 212, 227, random(200, 300));
+    fill(247, 212, 227, mouseX);
     drawTriangle();
     
-    fill(156, 97, 170, random(200, 300));
+    fill(156, 97, 170, mouseX);
     drawTriangle();
     
     fill(0, 153, 115);
@@ -186,13 +186,13 @@ function draw() {
     rect(90, 265, 75, 25);
   }
   if (playingG) {
-    fill(170, 207, 255, random(150, 250));
+    fill(170, 207, 255, mouseX);
     drawTriangle();
     
-    fill(247, 212, 227, random(150, 250));
+    fill(247, 212, 227, mouseX);
     drawTriangle();
     
-    fill(156, 97, 170, random(150, 250));
+    fill(156, 97, 170, mouseX);
     drawTriangle();
     
     fill(0, 153, 115);
